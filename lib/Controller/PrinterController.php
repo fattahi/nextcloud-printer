@@ -20,19 +20,19 @@ class PrinterController extends Controller
     /**
      * @var Printer
      */
-    protected $printer;
+    protected $printer2;
 
     /**
      * @var Config
      */
     protected $config;
 
-    public function __construct(string $appName, IRequest $request, Printer $printer, Config $config)
+    public function __construct(string $appName, IRequest $request, Printer $printer2, Config $config)
     {
         parent::__construct($appName, $request);
 
-        $this->language = \OC::$server->getL10N('printer');
-        $this->printer = $printer;
+        $this->language = \OC::$server->getL10N('printer2');
+        $this->printer2 = $printer2;
         $this->config = $config;
     }
 
@@ -64,12 +64,12 @@ class PrinterController extends Controller
             return new JSONResponse($notAllowed);
         }
 
-        if (!$this->printer->isValidOrientation($orientation)) {
+        if (!$this->printer2->isValidOrientation($orientation)) {
             return new JSONResponse($error);
         }
 
         try {
-            $this->printer->print($file, $orientation);
+            $this->printer2->print($file, $orientation);
 
             return new JSONResponse($success);
         } catch (ProcessFailedException $exception) {

@@ -3,5 +3,5 @@
  * adding route for ajax callback
  */
 return ['routes' => [
-    ['name' => 'printer#printfile', 'url' => '/printfile', 'verb' => 'GET']
+    ['name' => 'printer2#printfile', 'url' => '/printfile', 'verb' => 'GET']
 ]];

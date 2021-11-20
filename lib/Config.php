@@ -43,7 +43,7 @@ class Config
      */
     public function getAllowedGroupIds(): array
     {
-        $groups = $this->config->getAppValue('printer', 'allowed_groups', '[]');
+        $groups = $this->config->getAppValue('printer2', 'allowed_groups', '[]');
         $groups = json_decode($groups, true);
 
         return \is_array($groups) ? $groups : [];

@@ -35,7 +35,7 @@ class LoadAdditionalScriptsListener implements IEventListener {
             return;
         }
 
-        Util::addScript('printer', 'printer.tabview');
-        Util::addScript('printer', 'printer.plugin');
+        Util::addScript('printer2', 'printer2.tabview');
+        Util::addScript('printer2', 'printer2.plugin');
     }
 }

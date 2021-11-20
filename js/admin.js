@@ -1,9 +1,9 @@
 let elements = []
 
-const selector = '#printer-message';
+const selector = '#printer2-message';
 
 const appConfig = (name, value, callbacks) => {
-    OCP.AppConfig.setValue('printer', name, value, callbacks)
+    OCP.AppConfig.setValue('printer2', name, value, callbacks)
 }
 
 const saveSettings = (key) => {
@@ -36,17 +36,17 @@ const saveSettings = (key) => {
         success: () => {
             OC.msg.finishedSuccess(
                 selector,
-                t('printer', (key + 1) + '/' + size)
+                t('printer2', (key + 1) + '/' + size)
             )
 
             if (key < size - 1) {
                 saveSettings(++key)
             } else {
-                OC.msg.finishedSuccess(selector, t('printer', 'Saved'))
+                OC.msg.finishedSuccess(selector, t('printer2', 'Saved'))
             }
         },
         error: () => {
-            OC.msg.finishedError(selector, t('printer', 'Error while saving "' + element + '"'))
+            OC.msg.finishedError(selector, t('printer2', 'Error while saving "' + element + '"'))
         }
     }
 
@@ -54,9 +54,9 @@ const saveSettings = (key) => {
 }
 
 jQuery(document).ready(() => {
-    elements = jQuery('.printer-setting')
+    elements = jQuery('.printer2-setting')
 
-    jQuery('#printer-save').on('click', (event) => {
+    jQuery('#printer2-save').on('click', (event) => {
         event.preventDefault()
         OC.msg.startSaving(selector)
 

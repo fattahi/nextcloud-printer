@@ -1,15 +1,15 @@
 <?php
-style('printer', 'admin');
-script('printer', 'admin');
+style('printer2', 'admin');
+script('printer2', 'admin');
 ?>
-<div id="printer_admin">
+<div id="printer2_admin">
     <div class="section">
         <h2><?php p($l->t('Limit to groups')) ?></h2>
         <p class="settings-hint">
             <?php p($l->t('When at least one group is selected, only people of the listed groups can print.')); ?>
         </p>
 
-        <ul class="printer-setting" data-name="allowed_groups" data-checkbox>
+        <ul class="printer2-setting" data-name="allowed_groups" data-checkbox>
             <?php foreach ($_['groups'] as $group): ?>
                 <li>
                     <input
@@ -29,10 +29,10 @@ script('printer', 'admin');
             <?php endforeach ?>
         </ul>
 
-        <button id="printer-save" class="btn btn-info">
+        <button id="printer2-save" class="btn btn-info">
             <?php p($l->t('Save')); ?>
         </button>
 
-        <span id="printer-message" class="msg"></span>
+        <span id="printer2-message" class="msg"></span>
     </div>
 </div>

@@ -2,15 +2,15 @@
 
   var PrinterTabView = OCA.Files.DetailTabView.extend({
 
-    id: 'printerTabView',
-    className: 'tab printerTabView',
+    id: 'printer2TabView',
+    className: 'tab printer2TabView',
 
     /**
      * get label of tab
      */
     getLabel: function() {
 
-      return t('printer', 'Printer');
+      return t('printer2', 'Printer');
 
     },
 
@@ -40,7 +40,7 @@
     _renderSelectList: function($el) {
       $el.html('<div class="get-print">'
         + '<select id="choose-orientation">'
-          + '<option value="">' + t('printer', 'Choose orientation') + '</option>'
+          + '<option value="">' + t('printer2', 'Choose orientation') + '</option>'
           + '<option value="landscape">Landscape</option>'
           + '<option value="portrait">Portrait</option>'
         + '</select></div>'
@@ -69,13 +69,13 @@
       if(null == fileInfo) {
         _self.updateDisplay({
           response: 'error',
-          msg: t('printer', 'No fileinfo provided.')
+          msg: t('printer2', 'No fileinfo provided.')
         });
 
         return;
       }
 
-      var url = OC.generateUrl('/apps/printer/printfile'),
+      var url = OC.generateUrl('/apps/printer2/printfile'),
           data = {sourcefile: fileInfo.getFullPath(), orientation: orientation},
           _self = this;
       $.ajax({
@@ -123,7 +123,7 @@
         this.$el.html('<div style="text-align:center; word-wrap:break-word;" class="get-print"><p><img src="'
           + OC.imagePath('core','loading.gif')
           + '"><br><br></p><p>'
-          + t('printer', 'Printing document ...')
+          + t('printer2', 'Printing document ...')
           + '</p></div>');
         this.check(this.getFileInfo(), orientation);
       }

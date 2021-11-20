@@ -37,7 +37,7 @@ class AllowedGroups implements ISettings
     public function getForm(): TemplateResponse
     {
         $this->initialStateService->provideInitialState(
-            'printer',
+            'printer2',
             'allowed_groups',
             $this->config->getAllowedGroupIds()
         );
@@ -45,7 +45,7 @@ class AllowedGroups implements ISettings
         $groups = $this->groupManager->search('', 100);
         $allowedGroups = $this->config->getAllowedGroupIds();
 
-        return new TemplateResponse('printer', 'settings/admin/allowed-groups', [
+        return new TemplateResponse('printer2', 'settings/admin/allowed-groups', [
             'groups' => $groups,
             'allowedGroups' => $allowedGroups,
         ], '');
@@ -53,7 +53,7 @@ class AllowedGroups implements ISettings
 
     public function getSection(): string
     {
-        return 'printer';
+        return 'printer2';
     }
 
     public function getPriority(): int

@@ -28,12 +28,12 @@ class Section implements IIconSection
 
     public function getIcon(): string
     {
-        return $this->url->imagePath('printer', 'app-dark.svg');
+        return $this->url->imagePath('printer2', 'app-dark.svg');
     }
 
     public function getID(): string
     {
-        return 'printer';
+        return 'printer2';
     }
 
     public function getName(): string

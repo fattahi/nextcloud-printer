@@ -18,7 +18,7 @@
         return;
       }
 
-      fileList.registerTabView(new OCA.Printer.PrinterTabView('printerTabView', {}));
+      fileList.registerTabView(new OCA.Printer.PrinterTabView('printer2TabView', {}));
 
     }
   };
