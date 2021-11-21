@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OCA\Printer\Settings\Admin;
+namespace OCA\Printer2\Settings\Admin;
 
 use OCP\IL10N;
 use OCP\IURLGenerator;
@@ -38,7 +38,7 @@ class Section implements IIconSection
 
     public function getName(): string
     {
-        return $this->l->t('Printer');
+        return $this->l->t('Printer2');
     }
 
     public function getPriority(): int

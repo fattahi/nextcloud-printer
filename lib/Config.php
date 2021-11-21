@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OCA\Printer;
+namespace OCA\Printer2;
 
 use OCP\AppFramework\Utility\ITimeFactory;
 use OCP\IConfig;

@@ -1,14 +1,14 @@
 (function() {
 
-  OCA.Printer = OCA.Printer || {};
+  OCA.Printer2 = OCA.Printer2 || {};
 
   /**
    * @namespace
    */
-  OCA.Printer.Util = {
+  OCA.Printer2.Util = {
 
     /**
-     * Initialize the Printer plugin.
+     * Initialize the Printer2 plugin.
      *
      * @param {OCA.Files.FileList} fileList file list to be extended
      */
@@ -18,10 +18,10 @@
         return;
       }
 
-      fileList.registerTabView(new OCA.Printer.PrinterTabView('printer2TabView', {}));
+      fileList.registerTabView(new OCA.Printer2.Printer2TabView('printer2TabView', {}));
 
     }
   };
 })();
 
-OC.Plugins.register('OCA.Files.FileList', OCA.Printer.Util);
+OC.Plugins.register('OCA.Files.FileList', OCA.Printer2.Util);

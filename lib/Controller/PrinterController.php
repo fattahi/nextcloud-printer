@@ -1,16 +1,16 @@
 <?php
 
-namespace OCA\Printer\Controller;
+namespace OCA\Printer2\Controller;
 
-use OCA\Printer\Config;
-use OCA\Printer\Service\Printer;
+use OCA\Printer2\Config;
+use OCA\Printer2\Service\Printer2;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\JSONResponse;
 use OCP\IRequest;
 use OCP\IUserSession;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 
-class PrinterController extends Controller
+class Printer2Controller extends Controller
 {
     /**
      * @var OC\L10N\LazyL10N
@@ -18,7 +18,7 @@ class PrinterController extends Controller
     protected $language;
 
     /**
-     * @var Printer
+     * @var Printer2
      */
     protected $printer2;
 
@@ -27,7 +27,7 @@ class PrinterController extends Controller
      */
     protected $config;
 
-    public function __construct(string $appName, IRequest $request, Printer $printer2, Config $config)
+    public function __construct(string $appName, IRequest $request, Printer2 $printer2, Config $config)
     {
         parent::__construct($appName, $request);
 

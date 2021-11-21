@@ -1,16 +1,16 @@
 <?php
 
 namespace Service;
-namespace OCA\Printer\Service;
+namespace OCA\Printer2\Service;
 
 use Symfony\Component\Process\Process;
 
 /**
- * class Printer.
+ * class Printer2.
  *
  * @author Simon Vieille <simon@deblan.fr>
  */
-class Printer
+class Printer2
 {
     public function print(string $file, string $orientation)
     {

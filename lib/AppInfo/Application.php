@@ -21,9 +21,9 @@ declare(strict_types=1);
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-namespace OCA\Printer\AppInfo;
+namespace OCA\Printer2\AppInfo;
 
-use OCA\Printer\Listener\LoadAdditionalScriptsListener;
+use OCA\Printer2\Listener\LoadAdditionalScriptsListener;
 use OCA\Files\Event\LoadAdditionalScriptsEvent;
 use OCP\AppFramework\App;
 use OCP\AppFramework\Bootstrap\IBootContext;

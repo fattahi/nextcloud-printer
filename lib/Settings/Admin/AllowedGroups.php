@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OCA\Printer\Settings\Admin;
+namespace OCA\Printer2\Settings\Admin;
 
-use OCA\Printer\Config;
+use OCA\Printer2\Config;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IGroupManager;
 use OCP\IInitialStateService;

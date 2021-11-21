@@ -1,6 +1,6 @@
 (function() {
 
-  var PrinterTabView = OCA.Files.DetailTabView.extend({
+  var Printer2TabView = OCA.Files.DetailTabView.extend({
 
     id: 'printer2TabView',
     className: 'tab printer2TabView',
@@ -10,7 +10,7 @@
      */
     getLabel: function() {
 
-      return t('printer2', 'Printer');
+      return t('printer2', 'Printer2');
 
     },
 
@@ -139,8 +139,8 @@
 
   });
 
-  OCA.Printer = OCA.Printer || {};
+  OCA.Printer2 = OCA.Printer2 || {};
 
-  OCA.Printer.PrinterTabView = PrinterTabView;
+  OCA.Printer2.Printer2TabView = Printer2TabView;
 
 })();
