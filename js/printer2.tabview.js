@@ -40,9 +40,9 @@
     _renderSelectList: function($el) {
       $el.html('<div class="get-print">'
         + '<select id="choose-orientation">'
-          + '<option value="">' + t('printer2', 'Choose orientation') + '</option>'
-          + '<option value="landscape">Landscape</option>'
-          + '<option value="portrait">Portrait</option>'
+          + '<option value="">' + t('printer2', 'Choose link type') + '</option>'
+          + '<option value="normal">Normal link</option>'
+          + '<option value="onac">For ONAC</option>'
         + '</select></div>'
       );
     },

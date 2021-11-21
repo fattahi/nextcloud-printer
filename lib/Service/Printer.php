@@ -14,6 +14,16 @@ class Printer2
 {
     public function print(string $file, string $orientation)
     {
+	if ($orientation == 'normal') {
+		
+	}
+	if ($orientation == 'onac') {
+		
+	}
+	else {
+		
+	}
+/*
         $options = [
             'landscape' => [
                 'lpr',
@@ -29,6 +39,7 @@ class Printer2
 
         $process = new Process($options[$orientation]);
         $process->mustRun();
+*/
     }
 
     /**
@@ -37,8 +48,8 @@ class Printer2
     public function isValidOrientation(string $orientation): bool
     {
         return in_array($orientation, [
-            'landscape',
-            'portrait',
+            'normal',
+            'onac',
         ]);
     }
 }
